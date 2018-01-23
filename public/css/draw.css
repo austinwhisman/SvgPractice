@@ -1,0 +1,280 @@
+ html, body {
+    background: linear-gradient(330deg, #fff4f0, #30c6a0, #182925, #ee6203);
+    background-size: 800% 800%;
+    -moz-animation: AnimationName 35s ease infinite;
+    -o-animation: AnimationName 35s ease infinite;
+    animation: AnimationName 35s ease infinite;
+}
+ 
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 39%}
+    50%{background-position:100% 62%}
+    100%{background-position:0% 39%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 39%}
+    50%{background-position:100% 62%}
+    100%{background-position:0% 39%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 39%}
+    50%{background-position:100% 62%}
+    100%{background-position:0% 39%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 39%}
+    50%{background-position:100% 62%}
+    100%{background-position:0% 39%}
+}
+
+.drawnpath {
+    fill: none;
+    stroke-miterlimit:10;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    -webkit-animation: dash 14s ease alternate infinite;
+    -o-animation: dash 14s ease alternate infinite;
+    -moz-animation: dash 14s ease alternate infinite;
+    animation: dash 14s ease alternate infinite;
+}
+
+
+#path2 {
+    fill: white;
+    opacity: 0;
+   -webkit-animation: menubutton-dash 4s 4s ease forwards;
+    -o-animation: menubutton-dash 4s 4s ease forwards;
+    -moz-animation: menubutton-dash 4s 4s ease forwards;
+    animation: menubutton-dash 4s 4s ease forwards;
+}
+#path2:hover{
+   fill: black;
+   opacity: .8;
+}
+
+.menu {
+    stroke:white;
+    stroke-miterlimit:10;
+    stroke-dasharray: 1350;
+    stroke-dashoffset: 1350;
+    fill: rgba(200,200,200, 0);
+    -webkit-animation: menu-dash 4s 4s ease forwards;
+    -o-animation: menu-dash 4s 4s ease forwards;
+    -moz-animation: menu-dash 4s 4s ease forwards;
+    animation: menu-dash 4s 4s ease forwards;
+
+}
+
+
+
+.hide {
+
+    -webkit-animation: r-menu-dash 1s ease forwards;
+    -o-animation: r-menu-dash 1s ease forwards;
+    -moz-animation: r-menu-dash 1s ease forwards;
+    animation: r-menu-dash 1s ease forwards;
+}
+
+#Decided-to-become-fa .hide{
+    fill: none;
+}
+
+#aw {
+    stroke: cyan;
+    stroke-miterlimit:10;
+    stroke-dasharray: 1050;
+    stroke-dashoffset: 1050;
+    -webkit-animation: aw-dash 3s ease forwards;
+    -o-animation: aw-dash 3s ease forwards;
+    -moz-animation: aw-dash 3s ease forwards;
+    animation: aw-dash 3s ease forwards;
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+    }
+
+    50% {
+        stroke-dasharray: 0;
+
+    }
+
+    100% {
+        stroke-dashoffset: 100;
+        
+    }
+}
+
+@-moz-keyframes dash {
+    0% {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+    }
+
+    50% {
+        stroke-dasharray: 0;
+
+    }
+
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+@-o-keyframes dash {
+    0% {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+    }
+
+    50% {
+        stroke-dasharray: 0;
+
+    }
+
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 100;
+        stroke-dashoffset: 100;
+    }
+
+    50% {
+        stroke-dasharray: 1;
+
+    }
+
+    100% {
+        stroke-dashoffset: 100;
+    }
+}
+
+@-webkit-keyframes menu-dash {
+    to {
+        stroke-dashoffset: 0;
+        stroke: white;
+        fill: rgba(200,200,200, .3);
+    }
+}
+
+@-moz-keyframes menu-dash {
+    to {
+        stroke-dashoffset: 0;
+        stroke: white;
+        fill: rgba(200,200,200, .3);
+    }
+}
+
+@-o-keyframes menu-dash {
+   to {
+        stroke-dashoffset: 0;
+        stroke: white;
+        fill: rgba(200,200,200, .3);
+    }
+}
+
+@keyframes menu-dash {
+   to {
+        stroke-dashoffset: 0;
+        stroke: white;
+        fill: rgba(200,200,200, .3);
+    }
+}
+
+@-webkit-keyframes menubutton-dash {
+    to {
+        opacity: .4;
+    }
+}
+
+@-moz-keyframes menubutton-dash {
+    to {
+        opacity: .4;
+    }
+}
+
+@-o-keyframes menubutton-dash {
+   to {
+        opacity: .4;
+    }
+}
+
+@keyframes menubutton-dash {
+   to {
+        opacity: .4;
+    }
+}
+
+@-webkit-keyframes r-menu-dash {
+    to {
+
+       opacity: 0;
+       height: 0;
+       width: 0;
+      
+    }
+}
+
+@-moz-keyframes r-menu-dash {
+    to {
+        
+       opacity: 0;
+       height: 0;
+       width: 0;
+       
+    }
+}
+
+@-o-keyframes r-menu-dash {
+    to {
+       
+       opacity: 0;
+       height: 0;
+       width: 0;
+      
+    }
+}
+
+@keyframes r-menu-dash {
+    to {
+        
+       opacity: 0;
+       height: 0;
+       width: 0;
+       
+    }
+}
+
+@-webkit-keyframes aw-dash {
+     to {
+        stroke-dashoffset: 0;
+        stroke: orangered;
+    }
+}
+
+@-moz-keyframes aw-dash {
+    to {
+        stroke-dashoffset: 0;
+        stroke: orangered;
+    }
+}
+
+@-o-keyframes aw-dash {
+       to {
+        stroke-dashoffset: 0;
+        stroke: orangered;
+    }
+}
+
+@keyframes aw-dash {
+       to {
+        stroke-dashoffset: 0;
+        stroke: orangered;
+    }
+}
